@@ -6,7 +6,7 @@ dmenu/dmenu: dmenu libxft/src/.libs/libXft.a
 dmenu:
 	git clone --branch 5.0 https://git.suckless.org/dmenu
 	patch -d $@ < color_emojis.patch
-	patch -d $@ < dmenu-gruvbox-20210329-9ae8ea5.diff
+	# patch -d $@ < dmenu-gruvbox-20210329-9ae8ea5.diff
 	patch -d $@ < vim_bindings.patch
 	patch -d $@ < dmenu-caseinsensitive-5.0.diff
 
